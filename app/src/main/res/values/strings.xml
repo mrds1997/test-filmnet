@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FilmnetTest</string>
+    <string name="videos">فیلم ها</string>
+    <string name="favorite_videos">علاقه مندی ها</string>
+    <string name="message_exit">لطفا یکبار دیگر دکمه خروج را بزنید</string>
+    <string name="search_hit_txt">بین سریال ها و فیلم ها جستجو کنید...</string>
+    <string name="receiving_data">در حال دریافت اطلاعات...</string>
+    <string name="rank">"امتیاز : %s"</string>
+    <string name="summary">"چکیده داستان : "</string>
+
 </resources>

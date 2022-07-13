@@ -64,7 +64,7 @@ dependencies {
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    implementation("com.android.billingclient:billing-ktx:5.0.0")
+    implementation "com.airbnb.android:lottie:3.4.0"
 
     // Navigation Components
     implementation "androidx.navigation:navigation-fragment-ktx:2.2.1"
@@ -88,7 +88,6 @@ dependencies {
     // Coroutine Lifecycle Scopes
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 
-    implementation 'com.tbuonomo:dotsindicator:4.2'
 
     def room_version = "2.2.4"
     implementation "androidx.room:room-runtime:$room_version"
