@@ -79,8 +79,8 @@ class VideoDetailsActivity : LocalizationActivity() {
                 tvSummary.text = video.summary
                 video.categories?.forEach { category ->
                     if (category.type == "genre") {
+                        layoutCategory.removeAllViews()
                         category.items.forEach { item ->
-                            layoutCategory.removeAllViews()
                             val viewGenre = layoutInflater.inflate(
                                 R.layout.adapter_category,
                                 layoutCategory,

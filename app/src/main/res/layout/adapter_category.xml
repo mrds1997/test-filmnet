@@ -12,6 +12,7 @@
         android:id="@+id/tvGenre"
         android:textColor="@android:color/white"
         android:padding="5dp"
+        android:fontFamily="@font/iransans_fa_medium"
         android:background="@drawable/shape_bg_category"/>
 
 </LinearLayout>
