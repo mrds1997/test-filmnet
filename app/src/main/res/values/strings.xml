@@ -7,5 +7,12 @@
     <string name="receiving_data">در حال دریافت اطلاعات...</string>
     <string name="rank">"امتیاز : %s"</string>
     <string name="summary">"چکیده داستان : "</string>
+    <string name="added_suceesfully">به علاقه مندی ها افزوده شد!</string>
+    <string name="exist_in_favorite">در لیست علاقه مندی ها موجود است!</string>
+    <string name="deleted_from_favorite">از لیست علاقه مندی ها حذف شد!</string>
+    <string name="cancell_deleting">لغو</string>
+    <string name="no_favorite">علاقه مندی یافت نشد!</string>
+    <string name="welcome_message">خوش آمدید...</string>
+    <string name="app_version">ورژن برنامه : %s</string>
 
 </resources>

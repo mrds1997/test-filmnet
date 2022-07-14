@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.akexorcist.localizationactivity.ui.LocalizationActivity
+import com.example.filmnettest.ui.fragment.FavoriteVideosFragment
 import com.example.filmnettest.ui.fragment.VideosFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -13,6 +14,7 @@ class MainActivity : LocalizationActivity() {
 
     private var currentFragment: Fragment? = null
     private var videosFragment: VideosFragment? = null
+    private var favoriteVideosFragment: FavoriteVideosFragment? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +28,7 @@ class MainActivity : LocalizationActivity() {
                     changeFragment(getVideosFragment())
                 }
                 R.id.favorites -> {
-                    //changeFragment(getCallFragment())
+                    changeFragment(getFavoriteVideosFragment())
                 }
             }
             true
@@ -48,6 +50,13 @@ class MainActivity : LocalizationActivity() {
             videosFragment = VideosFragment.newInstance()
         }
         return videosFragment as VideosFragment
+    }
+
+    private fun getFavoriteVideosFragment(): Fragment {
+        if (favoriteVideosFragment == null) {
+            favoriteVideosFragment = FavoriteVideosFragment.newInstance()
+        }
+        return favoriteVideosFragment as FavoriteVideosFragment
     }
 
 
