@@ -19,18 +19,18 @@
                 android:id="@+id/imgCover"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title"
-                android:textColor="@color/yellow"
-                android:padding="4dp"
                 android:layout_margin="@dimen/margin_page_half"
                 android:fontFamily="@font/iransans_fa_bold"
-                android:textSize="20sp"/>
+                android:padding="4dp"
+                android:text="Title"
+                android:textColor="@color/yellow"
+                android:textSize="20sp" />
 
             <!--<TextView
                 android:layout_width="match_parent"
@@ -41,51 +41,54 @@
                 android:textSize="18sp"/>-->
 
             <TextView
+                android:id="@+id/tvRate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_page_half"
-                android:id="@+id/tvRate"
+                android:fontFamily="@font/iransans_fa_bold"
                 android:padding="4dp"
                 android:text="rank"
-                android:fontFamily="@font/iransans_fa_bold"
                 android:textColor="@android:color/white" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbars="none"
-                android:layout_marginTop="@dimen/margin_page">
+                android:layoutDirection="rtl">
 
                 <LinearLayout
+                    android:id="@+id/layoutCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutCategory"
+                    android:gravity="end"
                     android:orientation="horizontal">
-
 
                 </LinearLayout>
 
             </HorizontalScrollView>
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/summary"
-                android:layout_margin="@dimen/margin_page_half"
-                android:textColor="@android:color/white"
-                android:padding="4dp"
+                android:layout_marginTop="@dimen/margin_page_half"
+                android:layout_marginLeft="@dimen/margin_page_half"
+                android:layout_marginRight="@dimen/margin_page_half"
                 android:fontFamily="@font/iransans_fa_bold"
-                android:textSize="18sp"/>
+                android:padding="4dp"
+                android:text="@string/summary"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/tvSummary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvSummary"
-                android:textColor="@android:color/white"
+                android:fontFamily="@font/iransans_fa_medium"
+                android:layout_marginRight="@dimen/margin_page_half"
+                android:layout_marginLeft="@dimen/margin_page_half"
+                android:gravity="right"
                 android:padding="4dp"
-                android:layout_margin="@dimen/margin_page_half"
-                android:fontFamily="@font/iransans_fa_medium"/>
-
+                android:textColor="@android:color/white" />
 
 
         </LinearLayout>

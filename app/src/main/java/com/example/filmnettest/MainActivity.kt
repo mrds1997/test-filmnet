@@ -5,10 +5,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.akexorcist.localizationactivity.ui.LocalizationActivity
 import com.example.filmnettest.ui.fragment.VideosFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : LocalizationActivity() {
 
     private var currentFragment: Fragment? = null
     private var videosFragment: VideosFragment? = null
@@ -34,15 +35,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeFragment(fragment: Fragment) {
-        //if(!fragment.isAdded) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.layoutFragment, fragment)
             commit()
-            //addToBackStack(null)
-        }
-        //supportFragmentManager.popBackStack()
-        //}
 
+        }
         currentFragment = fragment
     }
 
